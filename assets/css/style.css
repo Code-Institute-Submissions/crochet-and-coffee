@@ -17,15 +17,23 @@ a:hover {
 
 /* -------------------------------------------------------------------- Colours --- */
 
-.title-text-green {
+.grey-text {
+    color: rgb(92, 92, 92);
+}
+
+.green-text {
     color: rgba(14, 63, 7, 0.75);
+}
+
+.grey-bg-color {
+    background-color: rgba(238, 234, 234, 0.6);
 }
 
 /* --------------------------------------------------------------------- Header --- */
 
 header {
-    height: 100px;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .logo-text {
@@ -33,23 +41,44 @@ header {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
-}
-
-nav {
-    float: right;
+    text-decoration: none;
 }
 
 nav a {
-    padding-right: 40px;
+    font-size: 16px;
     font-weight: 500;
-    color: rgba(14, 63, 7, 0.75);
     letter-spacing: 1px;
+    padding-left: 35px;
 }
 
 nav a:hover {
     color: rgba(14, 65, 7, 1);
 }
 
+/* --------------------------------------------------------------------- Footer --- */
 
+h3 {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
 
+h3 p {
+    font-size: 16px;
+}
 
+.footer-column {
+    padding: 30px 0 30px 50px;
+}
+
+footer a:hover {
+    color: rgb(10, 10, 10);
+}
+
+footer .social i {
+    padding-right: 30px;
+    font-size: 30px;
+}
+
+footer .social i:hover{
+    color: rgba(14, 65, 7, 1);
+}
