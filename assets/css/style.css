@@ -66,6 +66,10 @@ h3 p {
     font-size: 16px;
 }
 
+.footer {
+    text-align: center;
+}
+
 .footer-column {
     padding: 30px 0 30px 50px;
 }
@@ -74,11 +78,35 @@ footer a:hover {
     color: rgb(10, 10, 10);
 }
 
-footer .social i {
+footer .social-container i {
     padding-right: 30px;
     font-size: 30px;
 }
 
-footer .social i:hover{
+footer .social-container i:hover{
     color: rgba(14, 65, 7, 1);
+}
+
+/* --------------------------------------------------------------------- Media Queries --- */
+
+@media screen and (min-width: 992px) {
+    footer .social-container i {
+        padding-right: 10px;
+    }
+    nav a { 
+    padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    footer .social-container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    * {
+        text-align: center;
+        padding: 0;
+    }
 }
