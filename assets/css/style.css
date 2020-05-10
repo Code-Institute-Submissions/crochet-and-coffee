@@ -10,17 +10,33 @@
 
 body {
     font-family: "Raleway", sans-serif;
+    color: rgb(92, 92, 92);
+    text-align: center;
 }
 
 a:hover {
     text-decoration: none;
 }
 
-/* -------------------------------------------------------------------- Colours --- */
-
-.grey-text {
-    color: rgb(92, 92, 92);
+h2 {
+    padding: 30px 0;
 }
+
+
+h3 {
+    font-size: 24px;
+    padding-bottom: 15px;
+}
+
+h3 p {
+    font-size: 16px;
+}
+
+.column-padding {
+    padding: 30px 50px 30px 50px;
+}
+
+/* -------------------------------------------------------------------- Colours --- */
 
 .green-text {
     color: rgba(14, 63, 7, 0.75);
@@ -63,82 +79,57 @@ nav a:hover {
 
 /* --------------------------------------------------------------------- Footer --- */
 
-h3 {
-    font-size: 24px;
-    padding-bottom: 15px;
-}
-
-h3 p {
-    font-size: 16px;
-}
-
 .footer {
-    text-align: center;
     width: 100vw;
 }
 
-.footer-column {
-    padding: 30px 0 30px 50px;
+footer a {
+    color: rgb(92, 92, 92);
+}
+
+.contact-container i {
+    display: block;
 }
 
 footer a:hover {
     color: rgb(10, 10, 10);
 }
 
-footer .social-container i {
+.row .address {
+    text-align: center
+}
+
+.social-container i {
     padding-right: 20px;
     font-size: 30px;
 }
 
-footer .social-container i:hover{
+.social-container i:hover{
     color: rgba(14, 65, 7, 1);
+}
+
+/* --------------------------------------------------------------------- Welcome --- */
+
+.welcome {
+    padding-bottom: 30px;
+}
+
+.welcome p {
+    padding: 30px 0;
 }
 
 /* --------------------------------------------------------------------- Images --- */
 
-.hero-image-container {
-    width: 100vw;
-}
-
 .hero-image {
     height: 500px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-/* --------------------------------------------------------------------- Media Queries --- */
-
-@media screen and (min-width: 992px) {
-    nav a { 
-        padding-left: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    footer .social-container {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .footer-column {
-        padding: 30px 50px;
-    }   
-    .hero-image {
-        height: 400px;
-    }      
-}
-
-@media screen and (max-width: 600px) {
-    .hero-image {
-        height: 300px;
-    }      
-}
-
-@media screen and (max-width: 385px) {
-    footer .social-container i {
-        padding-right: 10px;
-    }
-    .hero-image {
-        height: 200px;
-    }  
+.welcome img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid rgba(238, 234, 234, 0.6);
 }
