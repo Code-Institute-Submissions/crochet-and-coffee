@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body {
@@ -44,11 +45,16 @@ header {
     text-decoration: none;
 }
 
+nav li {
+    list-style-type: none;
+    display: inline;
+}
+
 nav a {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
-    padding-left: 35px;
+    padding-left: 30px;
 }
 
 nav a:hover {
@@ -68,6 +74,7 @@ h3 p {
 
 .footer {
     text-align: center;
+    width: 100vw;
 }
 
 .footer-column {
@@ -79,7 +86,7 @@ footer a:hover {
 }
 
 footer .social-container i {
-    padding-right: 30px;
+    padding-right: 20px;
     font-size: 30px;
 }
 
@@ -87,26 +94,51 @@ footer .social-container i:hover{
     color: rgba(14, 65, 7, 1);
 }
 
+/* --------------------------------------------------------------------- Images --- */
+
+.hero-image-container {
+    width: 100vw;
+}
+
+.hero-image {
+    height: 500px;
+    width: 100%;
+}
+
 /* --------------------------------------------------------------------- Media Queries --- */
 
 @media screen and (min-width: 992px) {
-    footer .social-container i {
-        padding-right: 10px;
-    }
     nav a { 
-    padding-left: 25px;
+        padding-left: 10px;
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     footer .social-container {
         text-align: center;
     }
 }
 
 @media screen and (max-width: 767px) {
-    * {
-        text-align: center;
-        padding: 0;
+    .footer-column {
+        padding: 30px 50px;
+    }   
+    .hero-image {
+        height: 400px;
+    }      
+}
+
+@media screen and (max-width: 600px) {
+    .hero-image {
+        height: 300px;
+    }      
+}
+
+@media screen and (max-width: 385px) {
+    footer .social-container i {
+        padding-right: 10px;
     }
+    .hero-image {
+        height: 200px;
+    }  
 }
