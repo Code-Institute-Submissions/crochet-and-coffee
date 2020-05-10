@@ -12,6 +12,7 @@ body {
     font-family: "Raleway", sans-serif;
     color: rgb(92, 92, 92);
     text-align: center;
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -28,7 +29,7 @@ h3 p {
 }
 
 .column-padding {
-    padding: 30px 50px 30px 50px;
+    padding: 30px;
 }
 
 /* -------------------------------------------------------------------- Colours --- */
@@ -39,6 +40,10 @@ h3 p {
 
 .grey-bg-color {
     background-color: rgba(238, 234, 234, 0.6);
+}
+
+.pink-bg-color {
+    background-color: rgba(250, 168, 236, 0.3);
 }
 
 /* --------------------------------------------------------------------- Header --- */
@@ -119,11 +124,56 @@ footer a:hover {
     padding: 30px 0;
 }
 
-/* --------------------------------------------------------------------- Sessions Page --- */
+/* --------------------------------------------------------------------- Sessions and Login Pages --- */
 
+.login-box {
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.login-container h2,
 .session-container h2 {
     padding: 30px 0;
     background-color: rgba(164, 206, 158, 0.6);
+}
+
+.text-input {
+    width: 500px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.login-container p {
+    padding: 25px 0;
+}
+
+#login-box-external-p {
+    padding: 40px 0 25px 0;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+.checkbox-container {
+    text-align: center;
+    margin: -15px 0 15px 0;
+}
+
+#submit-button {
+    margin-top: 15px;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(250, 168, 236, 0.6);
+    border-radius: 10px;
+    color: rgb(92, 92, 92);
+}
+
+#submit-button:hover {
+    color: rgb(10, 10, 10);
 }
 
 /* --------------------------------------------------------------------- Images --- */

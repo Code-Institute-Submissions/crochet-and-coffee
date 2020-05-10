@@ -38,64 +38,65 @@
     </header>
     <!--/header-->
 
-    <!--main-->
-    <main>
-      <section class="session-container">
-        <div class="container-fluid">
-          <h2 class="green-text">Our session schedule</h2>
-          <div class="row no-gutter">
-            <div class="col- col-lg-4 column-padding">
-              <h3 class="green-text">
-                <i class="fas fa-cut" aria-hidden="true"></i> Beginner
-              </h3>
-              <p>Every Tuesday</p>
-              <p>6pm - 7pm</p>
-              <p>1 Hook Lane</p>
-              <br />
-              <p>£8 a session</p>
-              <hr />
-              <p>We'll loan you what you need for each session.</p>
-              <p>
-                If you want to buy your own kit, we'll be happy to advise you
-                what you need.
-              </p>
-            </div>
-            <div class="col- col-lg-4 column-padding">
-              <h3 class="green-text">
-                <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Advanced
-              </h3>
-              <p>Every Thursday</p>
-              <p>6pm - 7pm</p>
-              <p>1 Hook Lane</p>
-              <br />
-              <p>£8 a session</p>
-              <hr />
-              <p>If you've got it, feel free to bring your own kit.</p>
-              <p>
-                But don't worry if you haven't got everything, we've got you
-                covered.
-              </p>
-            </div>
-            <div class="col- col-lg-4 column-padding">
-              <h3 class="green-text">
-                <i class="fas fa-coffee" aria-hidden="true"></i> Freestyle
-              </h3>
-              <p>Every Sunday</p>
-              <p>10.30am - 11.30am</p>
-              <p>Stitch Cafe, Town Centre</p>
-              <br />
-              <p>Free</p>
-              <hr />
-              <p>Bring a project or just come for a chat.</p>
-              <p>
-                There's nothing better than a natter over crochet and coffee.
-              </p>
-            </div>
+    <!--Login Box-->
+    <section class="login-container">
+      <div class="container-fluid">
+        <h2 class="green-text">Fancy coming along?</h2>
+        <div class="row no-gutter">
+          <div class="login-box-container">
+            <p>Just complete the form below and pop it over to us...</p>
+            <form action="#" method="POST">
+              <div class="col- login-box pink-bg-color">
+                <input
+                  class="text-input"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  required
+                /><br />
+                <input
+                  class="text-input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                /><br />
+                <p>I'm interested in...</p>
+                <div class="checkbox-container">
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="interested-in"
+                    value="beginner"
+                    checked
+                  />
+                  Beginner<br />
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="interested-in"
+                    value="advanced"
+                  />
+                  Advanced<br />
+                  <input
+                    class="checkbox"
+                    type="checkbox"
+                    name="interested-in"
+                    value="freestyle"
+                  />
+                  Freestyle<br />
+                </div>
+                <input id="submit-button" type="submit" value="Submit" />
+              </div>
+            </form>
+            <p id="login-box-external-p">
+              <i>We aim to respond with session availability within 24 hours</i>
+            </p>
           </div>
         </div>
-      </section>
-    </main>
-    <!--/main-->
+      </div>
+    </section>
+    <!--/login box-->
 
     <!--footer-->
     <footer class="grey-bg-color footer-container">
