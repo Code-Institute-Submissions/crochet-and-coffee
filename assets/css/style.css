@@ -18,6 +18,11 @@ a:hover {
   text-decoration: none;
 }
 
+h2 {
+  padding: 30px 0;
+  background-color: rgba(164, 206, 158, 0.6);
+}
+
 h3 {
   font-size: 24px;
   padding-bottom: 15px;
@@ -42,7 +47,7 @@ h3 p {
 }
 
 .pink-bg-color {
-  background-color: rgba(250, 168, 236, 0.3);
+  background-color: rgba(250, 168, 236, 0.7);
 }
 
 /* --------------------------------------------------------------------- Header --- */
@@ -110,7 +115,8 @@ footer a:hover {
 
 /* --------------------------------------------------------------------- Landing Page --- */
 
-.welcome-container h2 {
+.h2-no-background {
+  background-color: transparent;
   padding: 60px 0 30px 0;
 }
 
@@ -118,16 +124,24 @@ footer a:hover {
   padding-bottom: 30px;
 }
 
+.welcome-container h3 {
+  padding-top: 20px;
+}
+
 .welcome-container p {
   padding: 30px 0;
 }
 
 .about-introduction p {
-    text-align: left;
-    padding: 0;
+  text-align: center;
+  padding: 0;
 }
 
 /* --------------------------------------------------------------------- Sessions and Login Pages --- */
+
+.login-bg-image-container {
+  color: white;
+}
 
 .login-box {
   padding: 20px;
@@ -136,13 +150,7 @@ footer a:hover {
 }
 
 .input-padding {
-    padding-top: 25px;
-}
-
-.login-container h2,
-.session-container h2 {
-  padding: 30px 0;
-  background-color: rgba(164, 206, 158, 0.6);
+  padding-top: 25px;
 }
 
 .form-control {
@@ -156,7 +164,8 @@ footer a:hover {
 }
 
 #login-box-external-p {
-  padding-bottom: 25px;
+  padding-bottom: 35px;
+  margin-top: -25px;
 }
 
 .checkbox-container {
@@ -174,14 +183,14 @@ input[type="email"]:focus {
   margin-top: 15px;
   width: 100px;
   height: 50px;
-  background-color: rgba(250, 168, 236, 0.6);
+  background-color: rgb(250, 168, 236);
   border-radius: 10px;
-  color: rgb(92, 92, 92);
+  color: white;
   border: none;
 }
 
 .submit-button:hover {
-  color: rgb(10, 10, 10);
+  color: rgb(92, 92, 92);
   background-color: rgba(250, 168, 236, 0.6);
   border: none;
 }
@@ -189,25 +198,30 @@ input[type="email"]:focus {
 /* --------------------------------------------------------------------- Images --- */
 
 /* Images taken from needpix.com:
-hero-image: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-around-thread-needle-knitting-yarn-knitted-fabric
+hero-image: https://www.needpix.com/photo/807606/art-flowers-papers-table-wood-wooden
 about-image: https://www.needpix.com/photo/651866/woman-female-beauty-young-girl-healthy-person-people-adult
 make-friends-image: https://www.needpix.com/photo/1036905/people-girls-women-coffee-drink-unwind-relax-talking-friend
 new-skill-image: https://www.needpix.com/photo/806543/crochet-wool-yarn-needles-hand-labor-knit-hobby-colorful-creative
 wellbeing-image: https://www.needpix.com/photo/614286/pebbles-row-colors-reflection-white-nature-rock-hard-stone
+beginner-image: https://www.needpix.com/photo/1469094/yarn-colorful-wool-balls-skeins-knitting-wallpaper-publicdomain-background
+advanced-image: https://www.needpix.com/photo/73815/yarn-colored-multi-colored-knitting-needlework-sock-yarn-blue-green-red
+freestyle-image: https://www.needpix.com/photo/561661/coffee-shop-barista-cafe-worker-coffee-man-adult-employee-business
+login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-around-thread-needle-knitting-yarn-knitted-fabric
 */
 
 .hero-image {
-  height: 500px;
+  height: 450px;
   width: 100%;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
+.session-container img,
 .welcome-container img {
   width: 250px;
   height: 250px;
   border-radius: 10px;
   border: 1px solid rgba(238, 234, 234, 0.6);
+  margin-top: 10px;
 }
 
 .about-introduction img {
@@ -215,6 +229,14 @@ wellbeing-image: https://www.needpix.com/photo/614286/pebbles-row-colors-reflect
   width: 200px;
   height: 100px;
   border: none;
+}
+
+.login-bg-image-container {
+  background-image: url("/assets/images/login-bg-image2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 15px;
+  margin-top: -8px;
 }
 
 /* --------------------------------------------------------------------- Media Queries --- */
@@ -230,6 +252,9 @@ wellbeing-image: https://www.needpix.com/photo/614286/pebbles-row-colors-reflect
   .welcome-container h2 {
     font-size: 24px;
   }
+  .hero-image {
+    height: 300px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -238,5 +263,11 @@ wellbeing-image: https://www.needpix.com/photo/614286/pebbles-row-colors-reflect
   }
   nav ul {
     margin-left: -15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about-introduction p {
+    text-align: left;
   }
 }
