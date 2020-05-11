@@ -122,6 +122,11 @@ footer a:hover {
   padding: 30px 0;
 }
 
+.about-introduction p {
+    text-align: left;
+    padding: 0;
+}
+
 /* --------------------------------------------------------------------- Sessions and Login Pages --- */
 
 .login-box {
@@ -183,6 +188,14 @@ input[type="email"]:focus {
 
 /* --------------------------------------------------------------------- Images --- */
 
+/* Images taken from needpix.com:
+hero-image: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-around-thread-needle-knitting-yarn-knitted-fabric
+about-image: https://www.needpix.com/photo/651866/woman-female-beauty-young-girl-healthy-person-people-adult
+make-friends-image: https://www.needpix.com/photo/1036905/people-girls-women-coffee-drink-unwind-relax-talking-friend
+new-skill-image: https://www.needpix.com/photo/806543/crochet-wool-yarn-needles-hand-labor-knit-hobby-colorful-creative
+wellbeing-image: https://www.needpix.com/photo/614286/pebbles-row-colors-reflection-white-nature-rock-hard-stone
+*/
+
 .hero-image {
   height: 500px;
   width: 100%;
@@ -195,6 +208,13 @@ input[type="email"]:focus {
   height: 250px;
   border-radius: 10px;
   border: 1px solid rgba(238, 234, 234, 0.6);
+}
+
+.about-introduction img {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border: none;
 }
 
 /* --------------------------------------------------------------------- Media Queries --- */
