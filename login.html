@@ -40,60 +40,76 @@
 
     <!--Login Box-->
     <section class="login-container">
-      <div class="container-fluid">
-        <h2 class="green-text">Fancy coming along?</h2>
-        <div class="row no-gutter">
-          <div class="login-box-container">
-            <p>Just complete the form below and pop it over to us...</p>
-            <form action="#" method="POST">
-              <div class="col- login-box pink-bg-color">
-                <input
-                  class="text-input"
-                  type="text"
-                  name="name"
-                  placeholder="Name"
-                  required
-                /><br />
-                <input
-                  class="text-input"
-                  type="email"
-                  name="email"
-                  placeholder="Email"
-                  required
-                /><br />
-                <p>I'm interested in...</p>
-                <div class="checkbox-container">
+      <div class="row no-gutter">
+        <div class="col">
+          <h2 class="green-text">Fancy coming along?</h2>
+        </div>
+      </div>
+      <div class="row no-gutter">
+        <div class="col">
+          <p>Just complete the form below and pop it over to us...</p>
+        </div>
+      </div>
+
+      <div class="login-box pink-bg-color">
+        <form>
+          <div class="form-group row">
+            <div class="col-8 offset-2">
+              <input type="text" class="form-control" placeholder="Name" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-8 offset-2">
+              <input type="email" class="form-control" placeholder="Email" />
+            </div>
+          </div>
+          <fieldset class="form-group">
+            <div class="form-group row">
+              <div class="col-sm-10 offset-1">
+                <div class="form-check">
                   <input
-                    class="checkbox"
+                    class="form-check-input"
                     type="checkbox"
                     name="interested-in"
-                    value="beginner"
+                    value="beginners"
                     checked
                   />
-                  Beginner<br />
+                  Beginners
+                </div>
+              </div>
+              <div class="col-sm-10 offset-1">
+                <div class="form-check">
                   <input
-                    class="checkbox"
+                    class="form-check-input"
                     type="checkbox"
                     name="interested-in"
                     value="advanced"
                   />
-                  Advanced<br />
+                  Advanced
+                </div>
+              </div>
+              <div class="col-sm-10 offset-1">
+                <div class="form-check">
                   <input
-                    class="checkbox"
+                    class="form-check-input"
                     type="checkbox"
                     name="interested-in"
                     value="freestyle"
                   />
-                  Freestyle<br />
+                  Freestyle
                 </div>
-                <input id="submit-button" type="submit" value="Submit" />
               </div>
-            </form>
-            <p id="login-box-external-p">
-              <i>We aim to respond with session availability within 24 hours</i>
-            </p>
+            </div>
+          </fieldset>
+          <div class="form-group row">
+            <div class="col-sm-10 offset-1">
+              <!-- Solution to remove focus border from button element found via Stack Overflow: https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked/37188321 -->
+              <button type="submit" id="submit-button" class="btn shadow-none">
+                Send
+              </button>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
     </section>
     <!--/login box-->

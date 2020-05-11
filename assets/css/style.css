@@ -12,7 +12,6 @@ body {
     font-family: "Raleway", sans-serif;
     color: rgb(92, 92, 92);
     text-align: center;
-    overflow-x: hidden;
 }
 
 a:hover {
@@ -54,7 +53,6 @@ header {
 }
 
 .logo-text {
-    padding-left: 40px;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -128,7 +126,7 @@ footer a:hover {
 
 .login-box {
     padding: 20px;
-    margin: 0;
+    margin: 50px;
     border-radius: 10px;
 }
 
@@ -138,30 +136,26 @@ footer a:hover {
     background-color: rgba(164, 206, 158, 0.6);
 }
 
-.text-input {
-    width: 500px;
+.form-control {
     border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
+    border: none;
 }
 
 .login-container p {
-    padding: 25px 0;
+    padding-top: 25px;
 }
 
 #login-box-external-p {
     padding: 40px 0 25px 0;
 }
 
-input:focus,
-button:focus {
-    outline: none;
+/* Solution to remove focus border from input elements found via Stack Overflow: https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: none;
+    box-shadow: none;
 }
 
-.checkbox-container {
-    text-align: center;
-    margin: -15px 0 15px 0;
-}
 
 #submit-button {
     margin-top: 15px;
@@ -190,4 +184,28 @@ button:focus {
     height: 250px;
     border-radius: 10px;
     border: 1px solid rgba(238, 234, 234, 0.6);
+}
+
+/* --------------------------------------------------------------------- Media Queries --- */
+
+@media (max-width: 325px) {
+    .social-container i {
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 481px) {
+    .session-container h2,
+    .welcome-container h2 {
+        font-size: 24px
+    }
+}
+
+@media (max-width: 767px) {
+    .logo-text {
+        margin-bottom: 16px;
+    }
+    nav ul {
+        margin-left: -15px;
+    }
 }
