@@ -53,7 +53,7 @@
 
       <div class="login-box pink-bg-color">
         <form>
-          <div class="form-group row">
+          <div class="form-group row input-padding">
             <div class="col-8 offset-2">
               <input type="text" class="form-control" placeholder="Name" />
             </div>
@@ -64,47 +64,53 @@
             </div>
           </div>
           <fieldset class="form-group">
-            <div class="form-group row">
-              <div class="col-sm-10 offset-1">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="interested-in"
-                    value="beginners"
-                    checked
-                  />
-                  Beginners
+            <div class="checkbox-container">
+              <div class="form-group row">
+                <div class="col-sm-10 offset-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="interested-in"
+                      value="beginners"
+                      checked
+                    />
+                    Beginners
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-10 offset-1">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="interested-in"
-                    value="advanced"
-                  />
-                  Advanced
+                <div class="col-sm-10 offset-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="interested-in"
+                      value="advanced"
+                    />
+                    Advanced
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-10 offset-1">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    name="interested-in"
-                    value="freestyle"
-                  />
-                  Freestyle
+                <div class="col-sm-10 offset-1">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="interested-in"
+                      value="freestyle"
+                    />
+                    Freestyle
+                  </div>
                 </div>
               </div>
             </div>
           </fieldset>
           <div class="form-group row">
             <div class="col-sm-10 offset-1">
-              <!-- Solution to remove focus border from button element found via Stack Overflow: https://stackoverflow.com/questions/23333231/bootstrap-button-shows-blue-outline-when-clicked/37188321 -->
-              <button type="submit" id="submit-button" class="btn shadow-none">
+              <button
+                type="submit"
+                class="btn btn-dark submit-button"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >
                 Send
               </button>
             </div>
@@ -113,6 +119,10 @@
       </div>
     </section>
     <!--/login box-->
+
+    <p id="login-box-external-p">
+      <i>We aim to respond with session availability within 24 hours</i>
+    </p>
 
     <!--footer-->
     <footer class="grey-bg-color footer-container">
@@ -169,6 +179,21 @@
     <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
     <script

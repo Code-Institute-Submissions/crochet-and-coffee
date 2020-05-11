@@ -1,211 +1,222 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 /* -------------------------------------------------------------------- Global Styles --- */
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    color: rgb(92, 92, 92);
-    text-align: center;
+  font-family: "Raleway", sans-serif;
+  color: rgb(92, 92, 92);
+  text-align: center;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h3 {
-    font-size: 24px;
-    padding-bottom: 15px;
+  font-size: 24px;
+  padding-bottom: 15px;
 }
 
 h3 p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .column-padding {
-    padding: 30px;
+  padding: 30px;
 }
 
 /* -------------------------------------------------------------------- Colours --- */
 
 .green-text {
-    color: rgba(14, 63, 7, 0.75);
+  color: rgba(14, 63, 7, 0.75);
 }
 
 .grey-bg-color {
-    background-color: rgba(238, 234, 234, 0.6);
+  background-color: rgba(238, 234, 234, 0.6);
 }
 
 .pink-bg-color {
-    background-color: rgba(250, 168, 236, 0.3);
+  background-color: rgba(250, 168, 236, 0.3);
 }
 
 /* --------------------------------------------------------------------- Header --- */
 
 header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 nav li {
-    list-style-type: none;
-    display: inline;
+  list-style-type: none;
+  display: inline;
 }
 
 nav a {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-left: 30px;
 }
 
 nav a:hover {
-    color: rgba(14, 65, 7, 1);
+  color: rgba(14, 65, 7, 1);
 }
 
 /* --------------------------------------------------------------------- Footer --- */
 
 .footer {
-    width: 100vw;
+  width: 100vw;
 }
 
 footer a {
-    color: rgb(92, 92, 92);
+  color: rgb(92, 92, 92);
 }
 
 .address-container i,
 .contact-container i {
-    display: block;
-    padding-bottom: 10px;
+  display: block;
+  padding-bottom: 10px;
 }
 
 footer a:hover {
-    color: rgb(10, 10, 10);
+  color: rgb(10, 10, 10);
 }
 
 .row .address {
-    text-align: center
+  text-align: center;
 }
 
 .social-container i {
-    padding-right: 20px;
-    font-size: 30px;
+  padding-right: 20px;
+  font-size: 30px;
 }
 
-.social-container i:hover{
-    color: rgba(14, 65, 7, 1);
+.social-container i:hover {
+  color: rgba(14, 65, 7, 1);
 }
 
 /* --------------------------------------------------------------------- Landing Page --- */
 
 .welcome-container h2 {
-    padding: 60px 0 30px 0;
+  padding: 60px 0 30px 0;
 }
 
 .welcome-container {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .welcome-container p {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 /* --------------------------------------------------------------------- Sessions and Login Pages --- */
 
 .login-box {
-    padding: 20px;
-    margin: 50px;
-    border-radius: 10px;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.input-padding {
+    padding-top: 25px;
 }
 
 .login-container h2,
 .session-container h2 {
-    padding: 30px 0;
-    background-color: rgba(164, 206, 158, 0.6);
+  padding: 30px 0;
+  background-color: rgba(164, 206, 158, 0.6);
 }
 
 .form-control {
-    border-radius: 20px;
-    border: none;
+  border-radius: 20px;
+  border: none;
 }
 
 .login-container p {
-    padding-top: 25px;
+  padding-top: 25px;
+  margin-bottom: -15px;
 }
 
 #login-box-external-p {
-    padding: 40px 0 25px 0;
+  padding-bottom: 25px;
+}
+
+.checkbox-container {
+  padding-top: 30px;
 }
 
 /* Solution to remove focus border from input elements found via Stack Overflow: https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow */
 input[type="text"]:focus,
 input[type="email"]:focus {
-    border-color: none;
-    box-shadow: none;
+  border-color: none;
+  box-shadow: none;
 }
 
-
-#submit-button {
-    margin-top: 15px;
-    width: 100px;
-    height: 50px;
-    background-color: rgba(250, 168, 236, 0.6);
-    border-radius: 10px;
-    color: rgb(92, 92, 92);
+.submit-button {
+  margin-top: 15px;
+  width: 100px;
+  height: 50px;
+  background-color: rgba(250, 168, 236, 0.6);
+  border-radius: 10px;
+  color: rgb(92, 92, 92);
+  border: none;
 }
 
-#submit-button:hover {
-    color: rgb(10, 10, 10);
+.submit-button:hover {
+  color: rgb(10, 10, 10);
+  background-color: rgba(250, 168, 236, 0.6);
+  border: none;
 }
 
 /* --------------------------------------------------------------------- Images --- */
 
 .hero-image {
-    height: 500px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .welcome-container img {
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    border: 1px solid rgba(238, 234, 234, 0.6);
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid rgba(238, 234, 234, 0.6);
 }
 
 /* --------------------------------------------------------------------- Media Queries --- */
 
 @media (max-width: 325px) {
-    .social-container i {
-        padding-right: 10px;
-    }
+  .social-container i {
+    padding-right: 10px;
+  }
 }
 
 @media (max-width: 481px) {
-    .session-container h2,
-    .welcome-container h2 {
-        font-size: 24px
-    }
+  .session-container h2,
+  .welcome-container h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 767px) {
-    .logo-text {
-        margin-bottom: 16px;
-    }
-    nav ul {
-        margin-left: -15px;
-    }
+  .logo-text {
+    margin-bottom: 16px;
+  }
+  nav ul {
+    margin-left: -15px;
+  }
 }
