@@ -1,3 +1,4 @@
+/* --- Font style taken from Google Fonts: https://fonts.google.com/specimen/Raleway --- */
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 /* -------------------------------------------------------------------- Global Styles --- */
@@ -159,7 +160,6 @@ footer a:hover {
 /* Solution to remove focus border from input elements found via Stack Overflow: https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow */
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-color: none;
   box-shadow: none;
 }
 
@@ -218,7 +218,6 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
 }
 
 #introduction img {
-  position: relative;
   width: 200px;
   height: 100px;
   border: none;
