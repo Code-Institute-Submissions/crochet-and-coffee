@@ -14,7 +14,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
     <title>Crochet & Coffee | Home</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
         <div class="row no-gutter">
           <div class="col- col-md-6 col-lg-4">
             <a href="index.html"
-              ><h1 class="logo-text green-text">Crochet & Coffee</h1></a
+              ><h1 id="logo-text" class="green-text">Crochet & Coffee</h1></a
             >
           </div>
           <div class="d-sm-none d-lg-block col-lg-4"></div>
@@ -43,22 +43,22 @@
     <!--/header-->
 
     <!--Login Box-->
-    <section class="login-container">
+    <section id="login-container">
       <div class="row no-gutter">
         <div class="col">
           <h2 class="green-text">Fancy coming along?</h2>
         </div>
       </div>
-      <div class="login-bg-image-container">
+      <div id="login-bg-image-container">
         <div class="row no-gutter">
           <div class="col">
             <p>Just complete the form below and pop it over to us.</p>
           </div>
         </div>
 
-        <div class="login-box pink-bg-color">
+        <div id="login-box" class="pink-bg-color">
           <form>
-            <div class="form-group row input-padding">
+            <div id="input-padding" class="form-group row">
               <div class="col-8 offset-2">
                 <input type="text" class="form-control" placeholder="Name" />
               </div>
@@ -70,7 +70,7 @@
             </div>
             <p>I'm interested in...</p>
             <fieldset class="form-group">
-              <div class="checkbox-container">
+              <div id="checkbox-container">
                 <div class="form-group row">
                   <div class="col-sm-10 offset-1">
                     <div class="form-check">
@@ -113,9 +113,8 @@
               <div class="col-sm-10 offset-1">
                 <button
                   type="submit"
-                  class="btn btn-dark submit-button"
-                  data-toggle="modal"
-                  data-target="#exampleModalCenter"
+                  id="submit-button"
+                  class="btn btn-dark"
                 >
                   Send
                 </button>
@@ -133,17 +132,17 @@
     </section>
 
     <!--footer-->
-    <footer class="grey-bg-color footer-container">
+    <footer class="grey-bg-color">
       <div class="container-fluid">
         <div class="row no-gutter">
-          <div class="col- col-md-6 col-lg-4 column-padding address-container">
+          <div id="address-container" class="col- col-md-6 col-lg-4 column-padding">
             <h3 class="green-text">Address</h3>
             <i class="fas fa-map-marker-alt green-text" aria-hidden="true"></i>
             <p>1 Hook Lane,<br />Woolton, WK1 H2</p>
           </div>
-          <div class="col- col-md-6 col-lg-4 column-padding contact-container">
+          <div id="contact-container" class="col- col-md-6 col-lg-4 column-padding">
             <h3 class="green-text">Contact</h3>
-            <div class="contact-details">
+            <div>
               <i
                 class="fas fa-envelope-open-text green-text"
                 aria-hidden="true"
@@ -151,12 +150,12 @@
               <a href="#">crochetandcoffee@gmail.com</a>
             </div>
             <br />
-            <div class="contact-details">
+            <div>
               <i class="fas fa-phone-alt green-text" aria-hidden="true"></i>
               07955123599
             </div>
           </div>
-          <div class="col- col-lg-4 column-padding social-container">
+          <div id="social-container" class="col- col-lg-4 column-padding">
             <h3 class="green-text">Social</h3>
             <a href="https://www.pinterest.co.uk/" target="_blank"
               ><i class="fab fa-pinterest green-text" aria-hidden="true"></i>

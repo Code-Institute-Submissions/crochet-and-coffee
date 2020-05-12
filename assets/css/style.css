@@ -14,9 +14,13 @@ body {
   text-align: center;
 }
 
+/* --- Pseudo-Classes --- */
+
 a:hover {
   text-decoration: none;
 }
+
+/* --- Headers --- */
 
 h2 {
   padding: 30px 0;
@@ -31,6 +35,8 @@ h3 {
 h3 p {
   font-size: 16px;
 }
+
+/* --- Padding --- */
 
 .column-padding {
   padding: 30px;
@@ -57,7 +63,7 @@ header {
   padding-bottom: 30px;
 }
 
-.logo-text {
+#logo-text {
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -82,43 +88,30 @@ nav a:hover {
 
 /* --------------------------------------------------------------------- Footer --- */
 
-.footer {
-  width: 100vw;
-}
-
 footer a {
   color: rgb(92, 92, 92);
-}
-
-.address-container i,
-.contact-container i {
-  display: block;
-  padding-bottom: 10px;
 }
 
 footer a:hover {
   color: rgb(10, 10, 10);
 }
 
-.row .address {
-  text-align: center;
+#address-container i,
+#contact-container i {
+  display: block;
+  padding-bottom: 10px;
 }
 
-.social-container i {
+#social-container i {
   padding-right: 20px;
   font-size: 30px;
 }
 
-.social-container i:hover {
+#social-container i:hover {
   color: rgba(14, 65, 7, 1);
 }
 
 /* --------------------------------------------------------------------- Landing Page --- */
-
-.h2-no-background {
-  background-color: transparent;
-  padding: 60px 0 30px 0;
-}
 
 .welcome-container {
   padding-bottom: 30px;
@@ -132,44 +125,35 @@ footer a:hover {
   padding: 30px 0;
 }
 
-.about-introduction p {
+#introduction p {
   text-align: center;
   padding: 0;
 }
 
 /* --------------------------------------------------------------------- Sessions and Login Pages --- */
 
-.login-bg-image-container {
+#login-bg-image-container {
   color: white;
 }
 
-.login-box {
+#login-box {
   padding: 20px;
   margin: 50px;
   border-radius: 10px;
 }
 
-.input-padding {
+#login-container p {
+  padding-top: 25px;
+  margin-bottom: -15px;
+}
+
+#input-padding {
   padding-top: 25px;
 }
 
 .form-control {
   border-radius: 20px;
   border: none;
-}
-
-.login-container p {
-  padding-top: 25px;
-  margin-bottom: -15px;
-}
-
-#login-box-external-p {
-  padding-bottom: 35px;
-  margin-top: -25px;
-}
-
-.checkbox-container {
-  padding-top: 30px;
 }
 
 /* Solution to remove focus border from input elements found via Stack Overflow: https://stackoverflow.com/questions/14820952/change-bootstrap-input-focus-blue-glow */
@@ -179,7 +163,16 @@ input[type="email"]:focus {
   box-shadow: none;
 }
 
-.submit-button {
+#checkbox-container {
+  padding-top: 30px;
+}
+
+#login-box-external-p {
+  padding-bottom: 35px;
+  margin-top: -25px;
+}
+
+#submit-button {
   margin-top: 15px;
   width: 100px;
   height: 50px;
@@ -189,9 +182,9 @@ input[type="email"]:focus {
   border: none;
 }
 
-.submit-button:hover {
+#submit-button:hover {
   color: rgb(92, 92, 92);
-  background-color: rgba(250, 168, 236, 0.6);
+  background-color: rgb(252, 145, 234);
   border: none;
 }
 
@@ -209,13 +202,13 @@ freestyle-image: https://www.needpix.com/photo/561661/coffee-shop-barista-cafe-w
 login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-around-thread-needle-knitting-yarn-knitted-fabric
 */
 
-.hero-image {
+#hero-image {
   height: 450px;
   width: 100%;
   background-size: cover;
 }
 
-.session-container img,
+#session-container img,
 .welcome-container img {
   width: 250px;
   height: 250px;
@@ -224,14 +217,14 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
   margin-top: 10px;
 }
 
-.about-introduction img {
+#introduction img {
   position: relative;
   width: 200px;
   height: 100px;
   border: none;
 }
 
-.login-bg-image-container {
+#login-bg-image-container {
   background-image: url("/assets/images/login-bg-image2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -242,23 +235,22 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
 /* --------------------------------------------------------------------- Media Queries --- */
 
 @media (max-width: 325px) {
-  .social-container i {
+  #social-container i {
     padding-right: 10px;
   }
 }
 
 @media (max-width: 481px) {
-  .session-container h2,
-  .welcome-container h2 {
+  h2 {
     font-size: 24px;
   }
-  .hero-image {
+  #hero-image {
     height: 300px;
   }
 }
 
 @media (max-width: 767px) {
-  .logo-text {
+  #logo-text {
     margin-bottom: 16px;
   }
   nav ul {
@@ -267,7 +259,7 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
 }
 
 @media (min-width: 992px) {
-  .about-introduction p {
+  #introduction p {
     text-align: left;
   }
 }
