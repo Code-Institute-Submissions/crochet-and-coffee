@@ -1,39 +1,91 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Crochet & Coffee Website
 
-Welcome GemHerbertson,
+Crochet & Coffee is a marketing website promoting a crochet focused craft learning group with social benefits.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+A live version of the site is available at: https://gemherbertson.github.io/crochet-and-coffee/
 
-## Gitpod Reminders
+## UX
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The Crochet & Coffee website has been developed to target:
+* Individuals who want to learn how to crochet without any prior knowledge.
+* Those who have experience in crochet but wish to further develop their skills.
+* The option for those seeking social interaction to take part with, or without, a craft element.
 
-`python3 -m http.server`
+The website succinctly puts across the benefits in joining Crochet & Coffee, the session schedule and an easy to complete form to register interest.
 
-A blue button should appear to click: *Make Public*,
+The design of the site grew organically during the development process. Initial wireframes are available to view via https://github.com/GemHerbertson/crochet-and-coffee/tree/master/wireframes.
 
-Another blue button should appear to click: *Open Browser*.
+## Features
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Existing Features
 
-A blue button should appear to click: *Make Public*,
+* Feature 1 - allows users to register their interest to attend learning and social sessions by completing the form contained within login.html.
 
-Another blue button should appear to click: *Open Browser*.
+### Features to Implement
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* Feature 2 - inclusion of a dropdown navigational menu for mobile devices.
+* Feature 3 - addition of a modal to the login.html page to acknowledge that the form has been successfully submitted.
+* Feature 4 - creation of a gallery page, where members can upload photographs of their projects. 
+* Feature 5 - creation of a shop page craft kits can be purchased.
 
-## Updates Since The Instructional Video
+## Technologies Used
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+* HTML5
+* CSS3 
+* Bootstrap - https://getbootstrap.com/
+    The Bootstrap library was used to:
+    * Create the responsive grid system for each .html file.
+    * Create the form contained within the login.html file.
+    * Style the submit button located within the login.html file.  
+    Bespoke code was added to the library features to achieve unique styling and is detailed in the style.css file.
+* Google Fonts - https://fonts.google.com/
+    Google Fonts was used to style the entirity of the website content and the link to the specific font is detailed within the style.css file.
+* Fontawesome - https://fontawesome.com/
+    All icons were taken from the fontawesome website. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Testing
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+1. Code Validation:
+    1. Code for all .html files was passed through the W3C validator at https://validator.w3.org/
+        * One issue warning was given for index.html, line 62, col 9 - 43 whereby it was stated that the section lacks a heading.  For styling purposes, it is necessary to position the heading outside of the relevant section. 
+    2. Code for the style.css file was passed through the W3C validator at https://jigsaw.w3.org/css-validator/
+        * No issues were identified. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+2. Register Interest:
+    1. Go to 'Sign Up' page.
+    2. Try to submit the form empty and an error message pops up to state fields are required.
+    3. Try to submit an email in an incorrect format and an error message pops up to state the correct format is requried.
+    4. Submit the form and the form clears. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+3. Responsivity:
+    1. The site has been developed to display on a variety of screen sizes.  
+    2. @media queries have been included, where necessary, increase UX. 
 
---------
+4. Issues:
+    1. A white void has appeared down the right-hand side of the screen seemingly outside of the site contents and further testing is required to identify the cause of the issue.
 
-Happy coding!
+## Deployment
+
+* The website was deployed via GitHub Pages by:
+    * Opening the Crochet & Coffee repository.
+    * Selecting the 'Settings' option from the navigation group located above the file structure.
+    * Scrolling down to the 'GitHub Pages' section.
+    * Selecting the 'master branch' from the Source dropdown menu. 
+
+## Credits
+
+### Media
+
+* Needpix - https://www.needpix.com
+    All images were taken from the royalty free image site.  Links to the individual images used are available in the images section of the style.css file.
+
+### Acknowledgements
+
+* Rahul Lakhanpal (Mentor)
+    * Guidance regarding use of 'container-fluid' class for Bootstrap grid system.
+    * Advise regarding inclusion of the meta description tag.
+    * Clarification regarding background-image syntax. 
+
+* Site design inspiration from:
+    * Laura Holland Jewelry - https://www.lauraholland.co.uk/
+    * The Boho Shed - https://thebohoshed.co.uk/ 

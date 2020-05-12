@@ -14,10 +14,12 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Crochet & Coffee | Home</title>
   </head>
   <body>
+    <!-- The page is structured using the grid system provided by Bootstrap: https://getbootstrap.com/docs/4.4/layout/grid/ -->
+    
     <!--header-->
     <header>
       <div class="container-fluid">
@@ -42,6 +44,7 @@
     </header>
     <!--/header-->
 
+    <!-- The form is structured using the code provided by Bootstrap: https://getbootstrap.com/docs/4.4/components/forms/ -->
     <!--Login Box-->
     <section id="login-container">
       <div class="row no-gutter">
@@ -111,18 +114,14 @@
             </fieldset>
             <div class="form-group row">
               <div class="col-sm-10 offset-1">
-                <button
-                  type="submit"
-                  id="submit-button"
-                  class="btn btn-dark"
-                >
+                <!-- The button is styled using the code provided by Bootstrap: https://getbootstrap.com/docs/4.4/components/buttons/ -->
+                <button type="submit" id="submit-button" class="btn btn-dark">
                   Send
                 </button>
               </div>
             </div>
           </form>
         </div>
-
         <!--/login box-->
 
         <p id="login-box-external-p">
@@ -132,15 +131,22 @@
     </section>
 
     <!--footer-->
+    <!-- Icons are taken from fontawsome: https://fontawesome.com/-->
     <footer class="grey-bg-color">
       <div class="container-fluid">
         <div class="row no-gutter">
-          <div id="address-container" class="col- col-md-6 col-lg-4 column-padding">
+          <div
+            id="address-container"
+            class="col- col-md-6 col-lg-4 column-padding"
+          >
             <h3 class="green-text">Address</h3>
             <i class="fas fa-map-marker-alt green-text" aria-hidden="true"></i>
             <p>1 Hook Lane,<br />Woolton, WK1 H2</p>
           </div>
-          <div id="contact-container" class="col- col-md-6 col-lg-4 column-padding">
+          <div
+            id="contact-container"
+            class="col- col-md-6 col-lg-4 column-padding"
+          >
             <h3 class="green-text">Contact</h3>
             <div>
               <i
