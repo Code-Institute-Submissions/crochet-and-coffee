@@ -77,7 +77,19 @@ The design of the site grew organically during the development process. Initial 
 ### Media
 
 * Needpix - https://www.needpix.com
-    All images were taken from the royalty free image site.  Links to the individual images used are available in the images section of the style.css file.
+
+about-image: https://www.needpix.com/photo/651866/woman-female-beauty-young-girl-healthy-person-people-adult
+make-friends-image: https://www.needpix.com/photo/1036905/people-girls-women-coffee-drink-unwind-relax-talking-friend
+new-skill-image: https://www.needpix.com/photo/806543/crochet-wool-yarn-needles-hand-labor-knit-hobby-colorful-creative
+beginner-image: https://www.needpix.com/photo/1469094/yarn-colorful-wool-balls-skeins-knitting-wallpaper-publicdomain-background
+advanced-image: https://www.needpix.com/photo/73815/yarn-colored-multi-colored-knitting-needlework-sock-yarn-blue-green-red
+freestyle-image: https://www.needpix.com/photo/561661/coffee-shop-barista-cafe-worker-coffee-man-adult-employee-business
+login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-around-thread-needle-knitting-yarn-knitted-fabric
+
+* Pixabay - https://pixabay.com
+
+heart-hero-image: https://pixabay.com/photos/heart-mother-s-day-love-pink-5068441/
+balance-image: https://pixabay.com/photos/balance-inspiration-motivation-life-865828/ 
 
 ### Acknowledgements
 

@@ -18,7 +18,6 @@
     <title>Crochet & Coffee | Home</title>
   </head>
   <body>
-
     <!-- header -->
     <header>
       <div class="container-fluid">
@@ -29,12 +28,12 @@
             >
           </div>
           <div class="d-sm-none d-lg-block col-lg-4"></div>
-          <div class="col- col-md-6 col-lg-4  header-top-padding">
+          <div class="col- col-md-6 col-lg-4 header-top-padding">
             <nav>
               <ul>
                 <li><a class="green-text" href="index.html">Home</a></li>
-                <li><a class="green-text" href="sessions.html">Sessions</a></li>
-                <li><a class="green-text" href="login.html">Sign Up</a></li>
+                <li><a class="green-text" href="#session-container">Sessions</a></li>
+                <li><a class="green-text" href="#contact-us-container">Contact Us</a></li>
               </ul>
             </nav>
           </div>
@@ -64,7 +63,7 @@
           <div class="row no-gutter">
             <div class="col- col-lg-4 column-padding my-auto">
               <div>
-                <img src="assets/images/about-image.jpg" alt="Friendly woman"/>
+                <img src="assets/images/about-image.jpg" alt="Friendly woman" />
               </div>
             </div>
             <div id="introduction" class="col- col-lg-8 column-padding">
@@ -125,10 +124,7 @@
                 Relax your mind by busying your hands and creating beautiful
                 pieces to show off to everyone.
               </p>
-              <img
-                src="assets/images/balance-image.jpg"
-                alt="Healing stones"
-              />
+              <img src="assets/images/balance-image.jpg" alt="Healing stones" />
             </div>
             <div class="col- col-lg-4 column-padding">
               <h3 class="green-text">
@@ -148,8 +144,154 @@
         </div>
       </section>
       <!--/why join-->
+
+      <!--session plan-->
+      <section id="session-container">
+        <div class="row no-gutter">
+          <div class="col">
+            <h2 class="green-text">Session plan</h2>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="row no-gutter">
+            <div class="col- col-lg-4 column-padding card">
+              <div class="card-body">
+                <h3 class="green-text">
+                  <i class="fas fa-cut" aria-hidden="true"></i> Beginner
+                </h3>
+                <p>Every Tuesday</p>
+                <p>6pm - 7pm</p>
+                <p>1 Hook Lane</p>
+                <br />
+                <p class="cost-bold">£8 a session</p>
+              </div>
+            </div>
+            <div class="col- col-lg-4 column-padding card">
+              <div class="card-body">
+                <h3 class="green-text">
+                  <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                  Advanced
+                </h3>
+                <p>Every Thursday</p>
+                <p>6pm - 7pm</p>
+                <p>1 Hook Lane</p>
+                <br />
+                <p class="cost-bold">£12 a session</p>
+              </div>
+            </div>
+            <div class="col- col-lg-4 column-padding card">
+              <div class="card-body">
+                <h3 class="green-text">
+                  <i class="fas fa-coffee" aria-hidden="true"></i> Freestyle
+                </h3>
+                <p>Every Sunday</p>
+                <p>10.30am - 11.30am</p>
+                <p>Stitch Cafe, Town Centre</p>
+                <br />
+                <p class="cost-bold">Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/session plan-->
     </main>
     <!--/main-->
+
+        <!-- The form is structured using the code provided by Bootstrap: https://getbootstrap.com/docs/4.4/components/forms/ -->
+    <!--Login Box-->
+    <section id="contact-us-container">
+      <div class="row no-gutter">
+        <div class="col">
+          <h2 class="green-text">Contact us</h2>
+        </div>
+      </div>
+
+      <div id="contact-box" class="pink-bg-color">
+        <form>
+          <div id="contact-padding" class="form-group row">
+            <div class="col-8 offset-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-8 offset-2">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <p>I'm interested in...</p>
+          <fieldset class="form-group">
+            <div id="checkbox-container">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="beginners"
+                  name="interested-in"
+                  value="beginners"
+                  checked
+                />
+                <label class="form-check-label" for="beginners"
+                  >Beginners</label
+                >
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="advanced"
+                  name="interested-in"
+                  value="advanced"
+                />
+                <label class="form-check-label" for="advanced">Advanced</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="freestyle"
+                  name="interested-in"
+                  value="freestyle"
+                />
+                <label class="form-check-label" for="freestyle"
+                  >Freestyle</label
+                >
+              </div>
+            </div>
+          </fieldset>
+          <div class="row no-gutter">
+        <div class="col-8 offset-2">
+          <textarea
+            id="form-textarea"
+            placeholder="Your message"
+          ></textarea>
+        </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10 offset-1">
+              <button type="submit" id="submit-button" class="btn btn-dark">
+                Send
+              </button>
+              <p class="text-muted">
+                <i>We aim to respond within 24 hours</i>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--/login box-->
+    </section>
 
     <!--footer-->
     <footer class="grey-bg-color">
@@ -161,21 +303,21 @@
           >
             <h3 class="green-text">Address</h3>
             <i class="fas fa-map-marker-alt green-text" aria-hidden="true"></i>
-            <p>1 Hook Lane, Woolton, WK1 H2</p>
+            <p>1 Hook Lane, <br> Woolton, WK1 H2</p>
           </div>
           <div
             id="contact-container"
             class="col- col-md-6 col-lg-4 column-padding"
           >
             <h3 class="green-text">Contact</h3>
-              <i
-                class="fas fa-envelope-open-text green-text"
-                aria-hidden="true"
-              ></i>
-              <a href="#">crochetandcoffee@gmail.com</a>
+            <i
+              class="fas fa-envelope-open-text green-text"
+              aria-hidden="true"
+            ></i>
+            <a href="#">crochetandcoffee@gmail.com</a>
             <br />
-              <i class="fas fa-phone-alt green-text" aria-hidden="true"></i>
-              <p>07955123599</p>
+            <i class="fas fa-phone-alt green-text" aria-hidden="true"></i>
+            <p>07955123599</p>
           </div>
           <div id="social-container" class="col- col-lg-4 column-padding">
             <h3 class="green-text">Social</h3>
@@ -200,6 +342,11 @@
               <span class="sr-only">Facebook</span></a
             >
           </div>
+        </div>
+        <div class="row no-gutter">
+        <div class="col-">
+            <p id="copyright" class="text-muted">&copy; Coffee & Crochet 2020.  All right reserved.</p>
+        </div>
         </div>
       </div>
     </footer>

@@ -54,7 +54,7 @@ h3 p {
 }
 
 .pink-bg-color {
-  background-color: rgba(250, 168, 236, 0.7);
+  background-color: rgba(252, 217, 246, 0.5);
 }
 
 /* --------------------------------------------------------------------- Header --- */
@@ -84,7 +84,7 @@ nav a {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 nav a:hover {
@@ -115,7 +115,13 @@ footer a:hover {
   color: rgba(14, 65, 7, 1);
 }
 
-/* --------------------------------------------------------------------- Landing Page --- */
+#copyright {
+    font-size: 12px;
+}
+
+/* --------------------------------------------------------------------- Page Content --- */
+
+/* --- welcome --- */
 
 .welcome-container {
   padding-bottom: 30px;
@@ -130,24 +136,35 @@ footer a:hover {
   padding: 0;
 }
 
-/* --------------------------------------------------------------------- Sessions and Login Pages --- */
+/* --- session schedule --- */
 
-#login-bg-image-container {
-  color: white;
+#session-container h3,
+.cost-bold {
+    font-weight: 900;
 }
 
-#login-box {
+.cost-bold {
+    font-size: 20px;
+}
+
+/* #card {
+    padding: 20px;
+} */
+
+/*--- contact box --- */
+
+#contact-box {
   padding: 20px;
   margin: 50px;
   border-radius: 10px;
 }
 
-#login-container p {
+#contact-container p {
   padding-top: 25px;
   margin-bottom: -15px;
 }
 
-#input-padding {
+#-padding {
   padding-top: 25px;
 }
 
@@ -166,9 +183,18 @@ input[type="email"]:focus {
   padding-top: 30px;
 }
 
-#login-box-external-p {
-  padding-bottom: 35px;
-  margin-top: -25px;
+#form-textarea {
+  border-radius: 20px;
+  border: none;
+}
+
+/* Solution to remove border from textarea element found via Stack Overflow: https://stackoverflow.com/questions/8622686/how-come-i-cant-remove-the-blue-textarea-border-in-twitter-bootstrap */
+#form-textarea {
+    outline: none;
+}
+
+textarea[placeholder="Your message"] {
+    padding: 5px;
 }
 
 #submit-button {
@@ -189,30 +215,9 @@ input[type="email"]:focus {
 
 /* --------------------------------------------------------------------- Images --- */
 
-/* Images taken from needpix.com:
-heart-hero-image: https://pixabay.com/photos/heart-mother-s-day-love-pink-5068441/
-about-image: https://www.needpix.com/photo/651866/woman-female-beauty-young-girl-healthy-person-people-adult
-make-friends-image: https://www.needpix.com/photo/1036905/people-girls-women-coffee-drink-unwind-relax-talking-friend
-new-skill-image: https://www.needpix.com/photo/806543/crochet-wool-yarn-needles-hand-labor-knit-hobby-colorful-creative
-balance-image: https://pixabay.com/photos/balance-inspiration-motivation-life-865828/ 
-beginner-image: https://www.needpix.com/photo/1469094/yarn-colorful-wool-balls-skeins-knitting-wallpaper-publicdomain-background
-advanced-image: https://www.needpix.com/photo/73815/yarn-colored-multi-colored-knitting-needlework-sock-yarn-blue-green-red
-freestyle-image: https://www.needpix.com/photo/561661/coffee-shop-barista-cafe-worker-coffee-man-adult-employee-business
-login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-around-thread-needle-knitting-yarn-knitted-fabric
-*/
-
 #hero-image {
   width: 100%;
   background-size: cover;
-}
-
-#session-container img,
-.welcome-container img {
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
-  border: 1px solid rgba(238, 234, 234, 0.6);
-  margin-top: 10px;
 }
 
 #introduction img {
@@ -221,12 +226,12 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
   border: none;
 }
 
-#login-bg-image-container {
-  background-image: url("/assets/images/login-bg-image2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 15px;
-  margin-top: -8px;
+.welcome-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 1px solid rgba(238, 234, 234, 0.6);
+  margin-top: 10px;
 }
 
 /* --------------------------------------------------------------------- Media Queries --- */
@@ -240,9 +245,6 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
 @media (max-width: 481px) {
   h2 {
     font-size: 24px;
-  }
-  #hero-image {
-    height: 300px;
   }
 }
 
