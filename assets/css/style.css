@@ -21,7 +21,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* --- Headers --- */
+/* --- Headings --- */
 
 h2 {
   padding: 30px 0;
@@ -64,6 +64,10 @@ header {
   padding-bottom: 30px;
 }
 
+.header-top-padding {
+    padding-top: 15px;
+}
+
 #logo-text {
   font-size: 24px;
   font-weight: bold;
@@ -97,10 +101,9 @@ footer a:hover {
   color: rgb(10, 10, 10);
 }
 
-#address-container i,
-#contact-container i {
-  display: block;
-  padding-bottom: 10px;
+#address-container p,
+#contact-container p {
+    display: inline;
 }
 
 #social-container i {
@@ -120,10 +123,6 @@ footer a:hover {
 
 .welcome-container h3 {
   padding-top: 20px;
-}
-
-.welcome-container p {
-  padding: 30px 0;
 }
 
 #introduction p {
@@ -191,11 +190,11 @@ input[type="email"]:focus {
 /* --------------------------------------------------------------------- Images --- */
 
 /* Images taken from needpix.com:
-hero-image: https://www.needpix.com/photo/807606/art-flowers-papers-table-wood-wooden
+heart-hero-image: https://pixabay.com/photos/heart-mother-s-day-love-pink-5068441/
 about-image: https://www.needpix.com/photo/651866/woman-female-beauty-young-girl-healthy-person-people-adult
 make-friends-image: https://www.needpix.com/photo/1036905/people-girls-women-coffee-drink-unwind-relax-talking-friend
 new-skill-image: https://www.needpix.com/photo/806543/crochet-wool-yarn-needles-hand-labor-knit-hobby-colorful-creative
-wellbeing-image: https://www.needpix.com/photo/614286/pebbles-row-colors-reflection-white-nature-rock-hard-stone
+balance-image: https://pixabay.com/photos/balance-inspiration-motivation-life-865828/ 
 beginner-image: https://www.needpix.com/photo/1469094/yarn-colorful-wool-balls-skeins-knitting-wallpaper-publicdomain-background
 advanced-image: https://www.needpix.com/photo/73815/yarn-colored-multi-colored-knitting-needlework-sock-yarn-blue-green-red
 freestyle-image: https://www.needpix.com/photo/561661/coffee-shop-barista-cafe-worker-coffee-man-adult-employee-business
@@ -203,7 +202,6 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
 */
 
 #hero-image {
-  height: 450px;
   width: 100%;
   background-size: cover;
 }
@@ -257,8 +255,3 @@ login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-
   }
 }
 
-@media (min-width: 992px) {
-  #introduction p {
-    text-align: left;
-  }
-}
