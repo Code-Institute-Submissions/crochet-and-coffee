@@ -19,8 +19,7 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-    <div id="page-top">
+    <header id="page-top">
       <div class="container-fluid">
         <div class="row no-gutter">
           <div class="col- col-md-6 col-lg-4 header-top-padding">
@@ -33,19 +32,26 @@
             <nav>
               <ul>
                 <li><a class="green-text" href="index.html">Home</a></li>
-                <li><a class="green-text" href="#session-container">Sessions</a></li>
-                <li><a class="green-text" href="#contact-us-container">Contact Us</a></li>
+                <li>
+                  <a class="green-text" href="#session-container">Sessions</a>
+                </li>
+                <li>
+                  <a class="green-text" href="#contact-us-container"
+                    >Contact Us</a
+                  >
+                </li>
               </ul>
             </nav>
           </div>
         </div>
       </div>
-    </div>
     </header>
     <!--/header-->
 
     <!-- floating button-->
-    <a href="#page-top"><button id="floating-button"><i class="fas fa-chevron-up"></i></button></a>
+    <a href="#page-top"
+      ><button id="floating-button"><i class="fas fa-chevron-up"></i></button
+    ></a>
     <!-- /floating button-->
 
     <!--hero image-->
@@ -160,7 +166,7 @@
         </div>
         <div class="container-fluid">
           <div class="row no-gutter">
-            <div class="col- col-lg-4 column-padding card">
+            <div class="col- col-lg-3 column-padding card">
               <div class="card-body">
                 <h3 class="green-text">
                   <i class="fas fa-cut" aria-hidden="true"></i> Beginner
@@ -168,11 +174,11 @@
                 <p>Every Tuesday</p>
                 <p>6pm - 7pm</p>
                 <p>1 Hook Lane</p>
-                <br />
+                <hr />
                 <p class="cost-bold">£8 a session</p>
               </div>
             </div>
-            <div class="col- col-lg-4 column-padding card">
+            <div class="col- col-lg-3 column-padding card">
               <div class="card-body">
                 <h3 class="green-text">
                   <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
@@ -181,19 +187,19 @@
                 <p>Every Thursday</p>
                 <p>6pm - 7pm</p>
                 <p>1 Hook Lane</p>
-                <br />
+                <hr />
                 <p class="cost-bold">£12 a session</p>
               </div>
             </div>
-            <div class="col- col-lg-4 column-padding card">
+            <div class="col- col-lg-3 column-padding card">
               <div class="card-body">
                 <h3 class="green-text">
                   <i class="fas fa-coffee" aria-hidden="true"></i> Freestyle
                 </h3>
                 <p>Every Sunday</p>
                 <p>10.30am - 11.30am</p>
-                <p>Stitch Cafe, Town Centre</p>
-                <br />
+                <p>Stitch Cafe</p>
+                <hr />
                 <p class="cost-bold">Free</p>
               </div>
             </div>
@@ -204,8 +210,7 @@
     </main>
     <!--/main-->
 
-        <!-- The form is structured using the code provided by Bootstrap: https://getbootstrap.com/docs/4.4/components/forms/ -->
-    <!--Login Box-->
+    <!-- contact box-->
     <section id="contact-us-container">
       <div class="row no-gutter">
         <div class="col">
@@ -215,7 +220,7 @@
 
       <div id="contact-box" class="pink-bg-color">
         <form>
-          <div id="contact-padding" class="form-group row">
+          <div id="input-padding" class="form-group row">
             <div class="col-8 offset-2">
               <input
                 type="text"
@@ -276,27 +281,23 @@
               </div>
             </div>
           </fieldset>
-          <div class="row no-gutter">
-        <div class="col-8 offset-2">
-          <textarea
-            id="form-textarea"
-            placeholder="Your message"
-          ></textarea>
-        </div>
-          </div>
+              <textarea
+                id="form-textarea"
+                placeholder="Message"
+              ></textarea>
           <div class="form-group row">
-            <div class="col-sm-10 offset-1">
+            <div class="col-sm-10 col-md-10 offset-md-1">
               <button type="submit" id="submit-button" class="btn btn-dark">
                 Send
               </button>
-              <p class="text-muted">
+              <p>
                 <i>We aim to respond within 24 hours</i>
               </p>
             </div>
           </div>
         </form>
       </div>
-      <!--/login box-->
+      <!--/contact box-->
     </section>
 
     <!--footer-->
@@ -309,7 +310,10 @@
           >
             <h3 class="green-text">Address</h3>
             <i class="fas fa-map-marker-alt green-text" aria-hidden="true"></i>
-            <p>1 Hook Lane, <br> Woolton, WK1 H2</p>
+            <p>
+              1 Hook Lane, <br />
+              Woolton, WK1 H2
+            </p>
           </div>
           <div
             id="contact-container"
@@ -350,9 +354,11 @@
           </div>
         </div>
         <div class="row no-gutter">
-        <div class="col">
-            <p id="copyright" class="text-muted">&copy; Coffee & Crochet 2020.  All right reserved.</p>
-        </div>
+          <div class="col">
+            <p id="copyright" class="text-muted">
+              &copy; Coffee & Crochet 2020. All right reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>
