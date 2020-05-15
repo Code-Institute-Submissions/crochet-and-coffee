@@ -1,4 +1,3 @@
-/* --- Font style taken from Google Fonts: https://fonts.google.com/specimen/Raleway --- */
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 /* -------------------------------------------------------------------- Global Styles --- */
@@ -9,7 +8,7 @@
   border: 0;
 }
 
-/* --- Solution to smooth scroll for floating button found via W3 schools: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 --- */
+/* --- Solution to smooth scroll for floating button found via W3 Schools: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 --- */
 html {
   scroll-behavior: smooth;
 }
@@ -69,7 +68,7 @@ h3 p {
   width: 50px;
   height: 50px;
   border-radius: 10px;
-  background-color: rgb(141, 141, 141);
+  background-color: rgb(181, 181, 181);
   color: white;
   position: fixed;
   right: 10px;
@@ -78,14 +77,19 @@ h3 p {
 }
 
 #floating-button:hover {
-  background-color: rgb(161, 161, 161);
-  color: rgba(14, 63, 7, 0.75);
+  background-color: rgb(141, 141, 141);
+  color: rgba(14, 65, 7, 0.4);
 }
 
 /* --- Solution to removing blue border found via Stack Overflow: https://stackoverflow.com/questions/49836206/cannot-remove-bootstrap-button-border --- */
 #floating-button:focus,
 #floating-button:active {
   outline: 0;
+}
+
+#floating-button .fa-chevron-up {
+  position: relative;
+  top: 25%;
 }
 
 /* --------------------------------------------------------------------- Header --- */
@@ -119,7 +123,7 @@ nav a {
 }
 
 nav a:hover {
-  color: rgba(14, 65, 7, 1);
+  color: rgb(14, 65, 7);
 }
 
 /* --------------------------------------------------------------------- Footer --- */
@@ -182,6 +186,7 @@ footer a:hover {
   border: 1px solid rgb(238, 234, 234);
   border-radius: 10px;
   margin: 4.1%;
+  /* --- Box shadow property found via W3 Schools: w3schools.com/cssref/css3_pr_box-shadow.asp --- */
   box-shadow: 5px 8px rgba(238, 234, 234, 0.5);
 }
 
@@ -278,32 +283,32 @@ textarea[placeholder="Message"] {
 }
 
 @media (max-width: 430px) {
-    #submit-button {
-  margin-top: 25px;
-  margin-left: 0;
-}
-#checkbox-container {
-  padding-bottom: 25px;
-}
+  #submit-button {
+    margin-top: 25px;
+    margin-left: 0;
+  }
+  #checkbox-container {
+    padding-bottom: 25px;
+  }
 
-#contact-us-container p,
-#input-padding {
-  padding-top: 25px;
-}
+  #contact-us-container p,
+  #input-padding {
+    padding-top: 25px;
+  }
 
-input[type="text"],
-input[type="email"],
-#form-textarea {
+  input[type="text"],
+  input[type="email"],
+  #form-textarea {
     text-align: center;
-}
+  }
 }
 
 @media (max-width: 456px) {
-    div[class="form-check form-check-inline"] {
-        display: block;
-        text-align: left;
-        margin-left: 30%;
-    }
+  div[class="form-check form-check-inline"] {
+    display: block;
+    text-align: left;
+    margin-left: 30%;
+  }
 }
 
 @media (max-width: 481px) {

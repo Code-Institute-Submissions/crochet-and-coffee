@@ -47,7 +47,7 @@ The design of the site grew organically during the development process. Initial 
 
 1. Code Validation:
     1. Code for all .html files was passed through the W3C validator at https://validator.w3.org/
-        * One issue warning was given for index.html, line 62, col 9 - 43 whereby it was stated that the section lacks a heading.  For styling purposes, it is necessary to position the heading outside of the relevant section. 
+        * One issue warning was given for index.html, line 68, col 17 - 51 whereby it was stated that the section lacks a heading.  For styling purposes, it is necessary to position the heading outside of the relevant section. 
     2. Code for the style.css file was passed through the W3C validator at https://jigsaw.w3.org/css-validator/
         * No issues were identified. 
 
