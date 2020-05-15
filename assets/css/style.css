@@ -9,6 +9,11 @@
   border: 0;
 }
 
+/* --- Solution to smooth scroll for floating button found via W3 schools: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2 --- */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   color: rgb(92, 92, 92);
@@ -55,6 +60,31 @@ h3 p {
 
 .pink-bg-color {
   background-color: rgba(252, 217, 246, 0.5);
+}
+
+/* --------------------------------------------------------------------- Floating Button --- */
+
+#floating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgb(141, 141, 141); 
+    color: white;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+#floating-button:hover {
+    background-color: rgb(161, 161, 161);
+    color: rgba(14, 63, 7, 0.75);
+}
+
+/* --- Solution to removing blue border found via Stack Overflow: https://stackoverflow.com/questions/49836206/cannot-remove-bootstrap-button-border --- */
+#floating-button:focus,
+#floating-button:active {
+    outline: 0;
 }
 
 /* --------------------------------------------------------------------- Header --- */
@@ -146,10 +176,6 @@ footer a:hover {
 .cost-bold {
     font-size: 20px;
 }
-
-/* #card {
-    padding: 20px;
-} */
 
 /*--- contact box --- */
 
