@@ -22,13 +22,14 @@ The design of the site grew organically during the development process. Both ini
 ### Existing Features
 
 * Feature 1 - a contact form has been added to the site to enable site users to register their interest to attend learning and social sessions through form completion/submission.  The form has been kept purposefully simple, with minimal information required (name and email), in order to improve UX.  Users are provided with checkboxes to facilitate easy indication of their area of interest however the option to send a message as part of the form submission is also offered, for more complex inquiries.
+* Feature 2 - a floating button has been added to the right-hand side of the site to enable users to easily return to the top of the page from any section of the site.  
 
 ### Features to Implement
 
-* Feature 2 - inclusion of a dropdown navigational menu for mobile devices.
-* Feature 3 - addition of a modal to the login.html page to acknowledge that the form has been successfully submitted.
-* Feature 4 - creation of a gallery page, where members can upload photographs of their projects. 
-* Feature 5 - creation of a shop page craft kits can be purchased.
+* Feature 3 - inclusion of a dropdown navigational menu for mobile devices.
+* Feature 4 - addition of a modal to the login.html page to acknowledge that the form has been successfully submitted.
+* Feature 5 - creation of a gallery page, where members can upload photographs of their projects. 
+* Feature 6 - creation of a shop page craft kits can be purchased.
 
 ## Technologies Used
 
@@ -53,10 +54,10 @@ The design of the site grew organically during the development process. Both ini
     2. Code for the style.css file was passed through the W3C validator at https://jigsaw.w3.org/css-validator/
         * No issues were identified. 
 
-2. Register Interest:
-    1. Go to 'Sign Up' page.
+2. Contact Us:
+    1. Go to 'Contact Us' section.
     2. Try to submit the form empty and an error message pops up to state fields are required.
-    3. Try to submit an email in an incorrect format and an error message pops up to state the correct format is requried.
+    3. Try to submit an email in an incorrect format and an error message pops up to state the correct format is required.
     4. Submit the form and the form clears. 
 
 3. Responsivity:
@@ -101,4 +102,4 @@ balance-image: https://pixabay.com/photos/balance-inspiration-motivation-life-86
     * Laura Holland Jewelry - https://www.lauraholland.co.uk/
         The inspiration from this site was the particular use of soft colours and the distribution of content primarily across three columns. 
     * The Boho Shed - https://thebohoshed.co.uk/ 
-        The inspiration from this site was it's use of colour to break up the site content into row sections as well as its use of images to put across the focus of the business.  
+        The inspiration from this site was it's use of colour to break up the site content into row sections as well as its use of images to put across the focus of the business. 
