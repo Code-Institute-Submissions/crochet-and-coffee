@@ -1,25 +1,27 @@
 # Crochet & Coffee Website
 
-Crochet & Coffee is a marketing website promoting a crochet focused craft learning group with social benefits.
+Crochet & Coffee is a marketing website promoting a crochet focused craft learning group with social benefits.  A live version of the site is available at: https://gemherbertson.github.io/crochet-and-coffee/.  
 
-A live version of the site is available at: https://gemherbertson.github.io/crochet-and-coffee/
+The inspiration for the website came from personal experience, having a number of friends who are developing small businesses in their spare time with aim of making a financial return on their passion.  
+
+The Crochet & Coffee website creates a dedicated online presence for such a small business that outlines the basic services provided, costs and associated benefits.  
 
 ## UX
 
-The Crochet & Coffee website has been developed to target:
+The Crochet & Coffee website has been developed using HTML5 and CSS3 to target:
 * Individuals who want to learn how to crochet without any prior knowledge.
 * Those who have experience in crochet but wish to further develop their skills.
 * The option for those seeking social interaction to take part with, or without, a craft element.
 
 The website succinctly puts across the benefits in joining Crochet & Coffee, the session schedule and an easy to complete form to register interest.
 
-The design of the site grew organically during the development process. Initial wireframes are available to view via https://github.com/GemHerbertson/crochet-and-coffee/tree/master/wireframes.
+The design of the site grew organically during the development process. Both initial and final wireframes are available to view via https://github.com/GemHerbertson/crochet-and-coffee/tree/master/wireframes.
 
 ## Features
 
 ### Existing Features
 
-* Feature 1 - allows users to register their interest to attend learning and social sessions by completing the form contained within login.html.
+* Feature 1 - a contact form has been added to the site to enable site users to register their interest to attend learning and social sessions through form completion/submission.  The form has been kept purposefully simple, with minimal information required (name and email), in order to improve UX.  Users are provided with checkboxes to facilitate easy indication of their area of interest however the option to send a message as part of the form submission is also offered, for more complex inquiries.
 
 ### Features to Implement
 
@@ -34,14 +36,14 @@ The design of the site grew organically during the development process. Initial 
 * CSS3 
 * Bootstrap - https://getbootstrap.com/
     The Bootstrap library was used to:
-    * Create the responsive grid system for each .html file.
-    * Create the form contained within the login.html file.
-    * Style the submit button located within the login.html file.  
+    * Create the responsive grid system to structure the site.
+    * Create the form, including styling of the send button.  
+    * A variety of Bootstrap classes have also been utilised across the site to achieve the required styling.
     Bespoke code was added to the library features to achieve unique styling and is detailed in the style.css file.
 * Google Fonts - https://fonts.google.com/
-    Google Fonts was used to style the entirity of the website content and the link to the specific font is detailed within the style.css file.
+    Google Fonts was used to style the text of the website content and the link to the specific font is detailed within the style.css file.
 * Fontawesome - https://fontawesome.com/
-    All icons were taken from the fontawesome website. 
+    All icons are displayed using code provided from the fontawesome website. 
 
 ## Testing
 
@@ -58,19 +60,23 @@ The design of the site grew organically during the development process. Initial 
     4. Submit the form and the form clears. 
 
 3. Responsivity:
-    1. The site has been developed to display on a variety of screen sizes.  
-    2. @media queries have been included, where necessary, increase UX. 
+    1. The site has been developed to display on a variety of screen sizes.  Following deployment, the site has been viewed on a selection of available devices, as well as using Chrome Developer Tools, to determine its suitabilty.  
+    2. @media queries have been included, where necessary, to increase UX. 
 
 4. Issues:
-    1. A white void has appeared down the right-hand side of the screen seemingly outside of the site contents and further testing is required to identify the cause of the issue.
+    1. On some devices, a white void appears intermittently down the right-hand side of the screen, seemingly outside of the site contents.  Further testing is required to identify the cause of the issue.
 
 ## Deployment
 
 * The website was deployed via GitHub Pages by:
+    * Go to github.com.
     * Opening the Crochet & Coffee repository.
     * Selecting the 'Settings' option from the navigation group located above the file structure.
     * Scrolling down to the 'GitHub Pages' section.
     * Selecting the 'master branch' from the Source dropdown menu. 
+    * After a period of time, a link will be displayed to the live site.
+    * Right click on the link and select 'copy link address' from the context menu.
+    * Issue the live link via appropriate media.
 
 ## Credits
 
@@ -81,10 +87,6 @@ The design of the site grew organically during the development process. Initial 
 about-image: https://www.needpix.com/photo/651866/woman-female-beauty-young-girl-healthy-person-people-adult
 make-friends-image: https://www.needpix.com/photo/1036905/people-girls-women-coffee-drink-unwind-relax-talking-friend
 new-skill-image: https://www.needpix.com/photo/806543/crochet-wool-yarn-needles-hand-labor-knit-hobby-colorful-creative
-beginner-image: https://www.needpix.com/photo/1469094/yarn-colorful-wool-balls-skeins-knitting-wallpaper-publicdomain-background
-advanced-image: https://www.needpix.com/photo/73815/yarn-colored-multi-colored-knitting-needlework-sock-yarn-blue-green-red
-freestyle-image: https://www.needpix.com/photo/561661/coffee-shop-barista-cafe-worker-coffee-man-adult-employee-business
-login-bg-image2: https://www.needpix.com/photo/1039942/yarn-wool-knitting-hooks-around-thread-needle-knitting-yarn-knitted-fabric
 
 * Pixabay - https://pixabay.com
 
@@ -93,11 +95,10 @@ balance-image: https://pixabay.com/photos/balance-inspiration-motivation-life-86
 
 ### Acknowledgements
 
-* Rahul Lakhanpal (Mentor)
-    * Guidance regarding use of 'container-fluid' class for Bootstrap grid system.
-    * Advise regarding inclusion of the meta description tag.
-    * Clarification regarding background-image syntax. 
+* Sources utilised to address design challenges are detailed within the body of the code at appropriate junctures.
 
 * Site design inspiration from:
     * Laura Holland Jewelry - https://www.lauraholland.co.uk/
+        The inspiration from this site was the particular use of soft colours and the distribution of content primarily across three columns. 
     * The Boho Shed - https://thebohoshed.co.uk/ 
+        The inspiration from this site was it's use of colour to break up the site content into row sections as well as its use of images to put across the focus of the business.  
